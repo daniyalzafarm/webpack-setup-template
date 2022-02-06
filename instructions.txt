@@ -1,0 +1,33 @@
+Instructions to setup Firebase 9 Webpack
+
+*** if you are using < create-react-app > , You don't have to this process ***
+
+Pre-req's -- You must have installed NodeJs
+
+-- Create a New Project Folder
+
+-- Create src folder in project folder
+    Create index.js file in src folder
+
+-- Create dist folder in project folder
+    Create index.html file in src folder
+
+-- Run < npm init -y >
+
+-- Run < npm i webpack webpack-cli -D >
+
+-- Create webpack.config.js file in project root folder, take code from webpack.org and paste in this file
+
+-- Create new script in package.json file
+    "build":"webpack"
+
+-- Write some code in index.js
+
+-- Run < npm run build > // it creates bundle.js in dist folder
+
+-- Add bundle.js as a script in index.html
+
+-- Now open index.html with Live server
+
+-- Now webpack bundled-up our code from source file its output in the bundle file 
+which we've linked to our html page
